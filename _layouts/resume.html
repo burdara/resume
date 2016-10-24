@@ -8,14 +8,29 @@
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
 
       <header class="page-header">
+        <div class="columns">
+          <div class="column three-fourths">
+            <!-- Your name is defined in the _config.yml file -->
+            <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+            <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
+          </div>
 
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
-        {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar" itemprop="image">
-        {% endif %}
+          <!-- <div class="column one-fourth">
+            <ul class="contact-info">
+              <li>6845 West 60th Avenue</li>
+              <li>Arvada, CO 80003</li>
+              <li>+1.720.943.0762</li>
+              <li>robbie.burda@gmail.com</li>
+            </ul>
+          </div> -->
 
-        <!-- Your name is defined in the _config.yml file -->
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+          <div class="column one-fourth">
+            <!-- You can turn off the avatar in _config.yml by setting to false -->
+            {% if site.resume_avatar == 'true' %}
+            <img src="images/avatar.jpg" alt="my photo" class="avatar" itemprop="image">
+            {% endif %}
+          </div>
+        </div>
 
         <div class="title-bar">
 
@@ -49,8 +64,8 @@
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
+          <h3 class="resume-item-title" itemprop="name">Slalom</h3>
+          <h4 class="resume-item-details" itemprop="description">Solution Architect &bull; May 2012 &mdash; Present</h4>
           <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
           <ul class="resume-item-list">
             <li>Ate lots of donuts</li>
